@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>A Little Surprise 🎁</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:wght@300;400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- Our CSS -->
+    <link rel="stylesheet"
+          href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================================= -->
+    <!-- FLOATING BACKGROUND HEARTS -->
+    <!-- ================================= -->
+
+    <div class="floating-elements">
+
+        <span>✦</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
+        <span>✦</span>
+        <span>♡</span>
+
+    </div>
+
+
+    <!-- ================================= -->
+    <!-- PAGE 1 - WELCOME -->
+    <!-- ================================= -->
+
+    <section class="page active"
+             id="page1">
+
+        <div class="content">
+
+            <div class="small-title">
+                A LITTLE SOMETHING FOR YOU
+            </div>
+
+
+            <h1>
+                Happy Birthday
+            </h1>
+
+
+            <div class="big-heart">
+                ♡
+            </div>
+
+
+            <p class="intro-text">
+
+                I made a little digital surprise
+                filled with memories, wishes
+                and a few things I wanted you
+                to see.
+
+            </p>
+
+
+            <button class="main-button"
+                    onclick="nextPage()">
+
+                Open Your Gift 🎁
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 2 - FLOWERS -->
+    <!-- ================================= -->
+
+    <section class="page"
+             id="page2">
+
+        <div class="content">
+
+            <div class="small-title">
+                A TINY GARDEN
+            </div>
+
+
+            <h2>
+                Pick a flower 🌸
+            </h2>
+
+
+            <p class="subtitle">
+
+                Each one has a little message
+                waiting for you.
+
+            </p>
+
+
+            <div class="flowers">
+
+
+                <button class="flower"
+                        onclick="showMessage(1)">
+
+                    🌷
+
+                </button>
+
+
+                <button class="flower"
+                        onclick="showMessage(2)">
+
+                    🌸
+
+                </button>
+
+
+                <button class="flower"
+                        onclick="showMessage(3)">
+
+                    🌹
+
+                </button>
+
+
+            </div>
+
+
+            <!-- MESSAGE BOX -->
+
+            <div class="message-box"
+                 id="messageBox">
+
+                <p id="flowerMessage">
+
+                    Pick one of the flowers above...
+
+                </p>
+
+            </div>
+
+
+            <button class="next-button"
+                    onclick="nextPage()">
+
+                Continue →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 3 - BIRTHDAY MESSAGE -->
+    <!-- ================================= -->
+
+    <section class="page"
+             id="page3">
+
+        <div class="content">
+
+            <div class="small-title">
+                JUST FOR YOU
+            </div>
+
+
+            <h2>
+                A Little Message 💌
+            </h2>
+
+
+            <div class="letter">
+
+                <p>
+
+                    Today is your day.
+
+                </p>
+
+
+                <p>
+
+                    I hope this new year of your
+                    life brings you plenty of
+                    reasons to smile, exciting
+                    memories and people who
+                    genuinely care about you( mmhmm like me >.<)
+
+                </p>
+
+
+                <p>
+
+                    Never forget how many little
+                    moments can become the
+                    memories we remember for years.
+
+                </p>
+
+
+                <p class="signature">
+
+                    — From your babycakes ♡
+
+                </p>
+
+            </div>
+
+
+            <button class="next-button"
+                    onclick="nextPage()">
+
+                There's More →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 4 - MEMORIES / PHOTOS -->
+    <!-- ================================= -->
+
+    <section class="page"
+             id="page4">
+
+        <div class="content">
+
+            <div class="small-title">
+                LITTLE MEMORIES
+            </div>
+
+
+            <h2>
+                Some Moments 📸
+            </h2>
+
+
+            <p class="subtitle">
+
+                Moments we have shared together manika
+
+            </p>
+
+
+            <div class="photo-grid">
+
+
+                <div class="photo-card">
+
+                    <img src="images/img1.jpg"
+                         alt="Memory 1">
+
+                    <p>
+                        A favourite moment
+                    </p>
+
+                </div>
+
+
+
+                <div class="photo-card">
+
+                    <img src="images/img2.jpg"
+                         alt="Memory 2">
+
+                    <p>
+                        One to remember
+                    </p>
+
+                </div>
+
+
+
+                <div class="photo-card">
+
+                    <img src="images/img4.jpg"
+                         alt="Memory 3">
+
+                    <p>
+                        Another little memory
+                    </p>
+
+                </div>
+
+
+            </div>
+
+
+            <button class="next-button"
+                    onclick="nextPage()">
+
+                One More Thing →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 5 - MUSIC -->
+    <!-- ================================= -->
+
+    <section class="page"
+             id="page5">
+
+        <div class="content">
+
+            <div class="small-title">
+                A SONG FOR YOUR DAY
+            </div>
+
+
+            <h2>
+                Press Play 🎵
+            </h2>
+
+
+            <p class="subtitle">
+
+                I will always be on your side...
+
+            </p>
+
+
+            <div class="music-card">
+
+                <div class="music-icon">
+                    🎵
+                </div>
+
+
+                <h3>
+                    Your Special Song
+                </h3>
+
+
+                <p>
+                    A little soundtrack
+                    for today.
+                </p>
+
+
+                <!--
+                Put your music file in the
+                main folder and change
+                "song.mp3" below.
+                -->
+
+                <audio controls>
+
+                    <source src="Lana Del Rey - Say Yes To Heaven (Lyrics) [A0TlnvbPvSc].mp3"
+                            type="audio/mpeg">
+
+                    Your browser does not
+                    support audio.
+
+                </audio>
+
+            </div>
+
+
+            <button class="next-button"
+                    onclick="nextPage()">
+
+                Keep Going →
+
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE 6 - FINAL SURPRISE -->
+    <!-- ================================= -->
+
+    <section class="page"
+             id="page6">
+
+        <div class="content final-content">
+
+
+            <div class="small-title">
+                ONE LAST THING
+            </div>
+
+
+            <h2>
+                Before You Go...
+            </h2>
+
+
+            <div class="gift-box"
+                 onclick="openFinalMessage()">
+
+                🎁
+
+            </div>
+
+
+            <p>
+
+                There's one final message
+                waiting inside.
+
+            </p>
+
+
+            <button class="main-button"
+                    onclick="openFinalMessage()">
+
+                Open It ❤️
+
+            </button>
+
+
+            <!-- FINAL MESSAGE -->
+
+            <div class="final-message"
+                 id="finalMessage">
+
+                <h2>
+                    ✨ Happy Birthday MY SANUU ! ✨
+                </h2>
+
+
+                <p>
+
+                    May this year be filled with
+                    happiness, adventures,
+                    unforgettable memories and
+                    lots of reasons to smile.Lets share the every moments together & lets make it for 
+                    the 100th birthday together with me !!
+
+                </p>
+
+
+                <p>
+
+                    Keep being you. I love youu my love ❤️
+
+                </p>
+
+
+                <div class="final-symbol">
+                    ✦ ♡ ✦
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================================= -->
+    <!-- PAGE NAVIGATION -->
+    <!-- ================================= -->
+
+    <div class="navigation">
+
+        <button onclick="previousPage()"
+                id="backButton">
+
+            ←
+
+        </button>
+
+
+        <span id="pageNumber">
+            1 / 6
+        </span>
+
+
+        <button onclick="nextPage()"
+                id="forwardButton">
+
+            →
+
+        </button>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
